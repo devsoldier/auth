@@ -3,11 +3,13 @@ import { useAuthContext } from "../../auth/context/auth-context";
 import { Spacing } from "../../../shared/spacing";
 
 export const HomePage = () => {
-  const { handleLogout } = useAuthContext();
+  const { handleLogout, userInfo } = useAuthContext();
   return (
     <View style={homeStyles.root}>
       <View style={homeStyles.content}>
-        <Text style={{ alignSelf: "center" }}>home page</Text>
+        <Text style={{ alignSelf: "center" }}>{userInfo?.email}</Text>
+        <Spacing size="md" />
+        <Text style={{ alignSelf: "center" }}>{userInfo?.name}</Text>
         <Spacing size="md" />
         <Button onPress={handleLogout} title="Logout"></Button>
       </View>
