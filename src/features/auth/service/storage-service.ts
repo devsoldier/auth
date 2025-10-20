@@ -1,6 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { AUTHENTICATED_USER, USER_INFO_KEY } from "../const";
-import { BaseAuthProps } from "./auth-service";
 import { UserInfo } from "../context/auth-context";
 
 export interface StorageService {

@@ -1,7 +1,5 @@
-import { useState } from "react";
-import { Control, Controller, useForm } from "react-hook-form";
-import { StyleSheet, Text, TextInput } from "react-native";
-import { createLoginSchema } from "./schema";
+import { Controller } from "react-hook-form";
+import { StyleSheet, Text } from "react-native";
 import { FormField } from "../../../../shared/form-field";
 import { Spacing } from "../../../../shared/spacing";
 

@@ -12,7 +12,6 @@ import {
 } from "../service/auth-service";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { AUTHENTICATED_USER, USER_INFO_KEY } from "../const";
-import { storageService } from "../service/storage-service";
 
 export interface UserInfo {
   email: string;

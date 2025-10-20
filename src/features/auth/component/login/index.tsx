@@ -1,6 +1,5 @@
 import { Button, StyleSheet, Text, View } from "react-native";
 import { useAuthContext } from "../../context/auth-context";
-import { TextInput } from "react-native-gesture-handler";
 import { useState } from "react";
 import LoadingOverlay from "../../../../shared/loading-layout";
 import { useNavigation } from "@react-navigation/native";
@@ -9,9 +8,6 @@ import { FormProvider, useForm } from "react-hook-form";
 import { createLoginSchema } from "./schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Toast from "react-native-toast-message";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import Entypo from "@expo/vector-icons/Entypo";
-import { FontAwesome } from "@expo/vector-icons";
 
 export const LoginPage = () => {
   const { handleLogin, formData, setFormData } = useAuthContext();
