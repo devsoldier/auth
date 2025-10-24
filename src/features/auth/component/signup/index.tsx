@@ -44,6 +44,7 @@ export const SignupPage = () => {
           type: "success",
           text1: `${response.message}`,
         });
+        return;
       }
 
       Toast.show({
